@@ -5,7 +5,7 @@ const config = require('../config/dbConfig.json');
 async function connectToDatabase() {
   try {
     await sql.connect(config);
-    console.log('Connected to the database successfully!');
+    console.log('Connected to the databases successfully!');
   } catch (err) {
     console.error('Error connecting to the database:', err);
   }
